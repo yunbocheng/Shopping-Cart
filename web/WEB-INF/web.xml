@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>OneSrevlet</servlet-name>
+        <servlet-class>com.yunbocheng.controller.OneServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OneSrevlet</servlet-name>
+        <url-pattern>/one</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TwoSrevlet</servlet-name>
+        <servlet-class>com.yunbocheng.controller.TwoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TwoSrevlet</servlet-name>
+        <url-pattern>/two</url-pattern>
+    </servlet-mapping>
+
+   <!--设置session的空闲时间-->
+    <session-config>
+        <session-timeout>5</session-timeout>
+    </session-config>
+
+</web-app>
